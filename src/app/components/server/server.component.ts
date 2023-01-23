@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./server.component.css'],
 })
 export class ServerComponent implements OnInit {
-  serverId = 19;
+  serverId = Math.floor(Math.random() * 100);
   serverStatus = 'offline';
   constructor() {
     this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';

@@ -1,6 +1,7 @@
 <section
   [ngStyle]="{ backgroundColor: getColor() }"
-  class="text-white p-1 mb-2"
+  [ngClass]="{ online: serverStatus === 'online' }"
+  class="mb-4 p-3"
 >
   <h1>I'm in the server component</h1>
   <p>Server with id {{ serverId }} is {{ getServerStatus() }}</p>
